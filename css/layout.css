@@ -32,6 +32,18 @@ footer ul {
   flex-direction: column;
   padding-left: 1rem;
 }
+/* LAYOUT FOR SECTIONS */
+.info-text {
+  display: grid;
+  grid-template-rows: min-content min-content 1fr;
+  grid-row: span 3;
+  gap: 10px;
+  padding: 20px;
+  margin: 10px;
+}
+.info-text h2 {
+  line-height: 4rem;
+}
 
 @media (width > 600px) {
   #frontpage > main {
