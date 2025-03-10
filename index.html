@@ -8,34 +8,60 @@
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/burger.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
-  <body>
+  <body id="frontpage">
     <header>
       <nav>
-        <ul>
-          <li><a href="index.html">Forside</a></li>
-          <li><a href="instruction.html">Info</a></li>
-          <li><a href="register.html">Registrer</a></li>
+        <ul class="menu">
+          <li><a class="menuItem" href="index.html">Forside</a></li>
+          <li><a class="menuItem" href="instruction.html">Info</a></li>
+          <li><a class="menuItem" href="register.html">Registrer</a></li>
         </ul>
         <div class="logo-wrapper">
-          <img src="img/logo.svg" alt="" class="logo" />
+          <div class="placeholder">LOGO</div>
+          <!-- Placer logo her -->
         </div>
       </nav>
     </header>
 
     <main>
       <h1>HEADLINE</h1>
-      <section class="daily"></section>
-      <section class="breaking"></section>
+      <section class="daily">
+        <div class="placeholder">ARTIKEL</div>
+      </section>
+      <section class="breaking"><div class="placeholder">BREAKING NEWS</div></section>
     </main>
 
     <footer>
-      <div class="some"></div>
-      <div class="another"></div>
-      <div class="yetanother"></div>
+      <nav class="some">
+        <ul>
+          <li><a href="">link</a></li>
+          <li><a href="">link</a></li>
+          <li><a href="">link</a></li>
+          <li><a href="">link</a></li>
+        </ul>
+      </nav>
+      <nav class="another">
+        <ul>
+          <li><a href="">link</a></li>
+          <li><a href="">link</a></li>
+          <li><a href="">link</a></li>
+          <li><a href="">link</a></li>
+        </ul>
+      </nav>
+      <nav class="yetanother">
+        <ul>
+          <li><a href="">link</a></li>
+          <li><a href="">link</a></li>
+          <li><a href="">link</a></li>
+          <li><a href="">link</a></li>
+        </ul>
+      </nav>
     </footer>
     <script src="js/main.js"></script>
+    <script src="js/burger.js"></script>
   </body>
 </html>

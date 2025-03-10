@@ -1,20 +1,61 @@
+/* LAYOUT FOR MAIN CONTENT */
 body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   height: 100vh;
 }
-header nav {
+main {
+  display: grid;
+}
+
+/* LAYOUT FOR HEADER AND FOOTER */
+header,
+footer {
+  display: grid;
+  gap: 10px;
+}
+header nav,
+footer nav {
   display: flex;
   justify-content: space-between;
 }
+nav ul {
+  display: flex;
+}
+header ul {
+  height: 100%;
+  width: clamp(175px, 50%, 300px);
+  justify-content: space-between;
+  align-items: flex-end;
+}
+footer ul {
+  flex-direction: column;
+  padding-left: 1rem;
+}
 
 @media (width > 600px) {
-  main {
-    display: grid;
+  #frontpage > main {
+    grid-template-columns: 6fr 3fr;
+    grid-template-rows: min-content 1fr;
+  }
+  #instruction > main {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content 1fr;
+  }
+  #register > main {
     grid-template-columns: 3fr 1fr;
     grid-template-rows: min-content 1fr;
   }
+  .qr {
+    order: 1;
+  }
+  .formular {
+    order: 2;
+  }
   h1 {
     grid-column: 1 / -1;
+  }
+  footer {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
