@@ -2,10 +2,12 @@
 body {
   display: grid;
   grid-template-rows: auto 1fr auto;
+  row-gap: 2rem;
   height: 100vh;
 }
 main {
   display: grid;
+  row-gap: 1rem;
 }
 
 /* LAYOUT FOR HEADER AND FOOTER */
@@ -33,6 +35,19 @@ footer ul {
   padding-left: 1rem;
 }
 /* LAYOUT FOR SECTIONS */
+#daily,
+#breaking {
+  display: grid;
+}
+#daily {
+  grid-template-rows: repeat(2, minmax(200px, min-content));
+  gap: 1rem;
+}
+#breaking {
+  grid-template-rows: repeat(auto-fit, minmax(50px, min-content));
+  gap: 0;
+}
+
 .info-text {
   display: grid;
   grid-template-rows: min-content min-content 1fr;
