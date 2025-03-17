@@ -4,14 +4,20 @@ body {
   grid-template-rows: auto 1fr auto;
   row-gap: 2rem;
   height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 main {
   display: grid;
   row-gap: 1rem;
+  grid-template-rows: min-content min-content 1fr min-content;
+}
+main > *:not(:first-child) {
+  margin: 0 1rem;
 }
 
 /* LAYOUT FOR HEADER AND FOOTER */
-header,
+
 footer {
   display: grid;
   gap: 10px;
@@ -20,20 +26,24 @@ header nav,
 footer nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+header nav > * {
+  flex: 1;
 }
 nav ul {
   display: flex;
+  justify-content: flex-end;
 }
 header ul {
   height: 100%;
   width: clamp(175px, 50%, 300px);
-  justify-content: space-between;
-  align-items: flex-end;
 }
 footer ul {
   flex-direction: column;
   padding-left: 1rem;
 }
+
 /* LAYOUT FOR SECTIONS */
 #daily,
 #breaking {
@@ -48,30 +58,17 @@ footer ul {
   gap: 0;
 }
 
-.info-text {
-  display: grid;
-  grid-template-rows: min-content min-content 1fr;
-  grid-row: span 3;
-  gap: 10px;
-  padding: 20px;
-  margin: 10px;
-}
-.info-text h2 {
-  line-height: 4rem;
-}
-
 @media (width > 600px) {
   #frontpage > main {
     grid-template-columns: 6fr 3fr;
     grid-template-rows: min-content 1fr;
   }
   #instruction > main {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 5fr 3fr;
     grid-template-rows: min-content 1fr;
   }
   #register > main {
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: min-content 1fr;
+    grid-template-columns: fr 1fr;
   }
   .qr {
     order: 1;

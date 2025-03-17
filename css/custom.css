@@ -6,9 +6,11 @@
   --secondary-bg-color: #5d656c; /* used */
   --secondary-font-color: #d5e5f4; /* used */
 
-  --splaceholder-bg-color: #eb9e1a; /* used */
+  /* CAN BE DELETED WHEN THE PLACEHOLDER CLASS IS DELETED */
+  --placeholder-bg-color: #eb9e1a; /* used */
   --placeholder-font-color: #575c61; /* used */
 
+  /* NOT USED AT THE MOMENT */
   --info-color: #17a2b8;
   --warning-color: #ffc107;
   --danger-color: #dc3545;
@@ -17,18 +19,64 @@
   --border-color: #007bff; /* used */
   --border-color-light: #f7f5c2; /* used */
 
-  --disabled-color: #6c757d;
-
   /* Links */
   --link-color: #ccd4dd; /* used */
   --hover-color: #f9fcfe; /* used */
-  --active-color: #ffee56; /* used */
+  --active-color: #ff4d00; /* used */
+
+  /* From styletile */
 
   /* Fonts */
-  --default-font: "Roboto", sans-serif;
+  --logotype-font: "Roboto", sans-serif;
   --headline-font: "Roboto", sans-serif;
   --body-font: "Roboto", sans-serif;
-  --code-font: "Roboto Mono", monospace;
+  --link-font: "Calibri", sans-serif;
 
-  /* Sizes */
+  /* Text sizes */
+  --logotype-size: 1.5rem;
+  --headline1-size: 2rem;
+  --headline2-size: 1.5rem;
+  --headline3-size: 1.25rem;
+  --bodytext-size: 1rem;
+  --cta-text-size: 1.25rem;
+  --followup-text-size: 0.8rem;
+  --form-submit-size: 1rem;
+
+  /* Text colors */
+  --logotype-color: #ffffff;
+  --headline-color: #007bff;
+  --headline-color-inverted: #f9fcfe;
+  --bodytext-color: #575c61;
+  --bodytext-color-inverted: #f9fcfe;
+  --cta-text-color: #007bff;
+  --cta-text-color-inverted: #f9fcfe;
+  --followup-text-color: #575c61;
+  --followup-text-color-inverted: #f9fcfe;
+  --formfield-text-color: #575c61;
+  --form-submit-color: #f9fcfe;
+  --form-submit-color-inverted: #007bff;
+
+  /* Background colors */
+  --logotype-background-color: #000000;
+  --header-background-color: #6f90eb;
+  --info-background-color: #ffffff;
+  --headline-bg-color: #f9fcfe;
+  --headline-bg-color-alert: #ff4d00;
+  --headline-bg-color-inverted: #007bff;
+  --bodytext-bg-color: #e8ebee;
+  --bodytext-bg-color-inverted: #007bff;
+  --cta-text-bg-color: #007bff;
+  --cta-text-bg-color-inverted: #f9fcfe;
+  --followup-text-bg-color: #e8ebee;
+  --followup-text-bg-color-inverted: #007bff;
+  --form-background-color: #f9fcfe;
+  --form-text-color: #575c61;
+  --formfield-background-color: #e8ebee;
+  --formfield-background-color-active: #007bff;
+  --form-submit-bg-color: #007bff;
+  --form-submit-bg-color-inverted: #f9fcfe;
+
+  /* Info-boxes */
+  --info-bg-color-yellow: #fcd30e;
+  --info-bg-color-green: #def5db;
 }
